@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rebell mit Herz – Gratis Checkliste</title>
+  <meta name="color-scheme" content="dark" />
+  <link rel="stylesheet" href="assets/app.css" />
+</head>
+<body data-page="lead">
+  <div class="wrap">
+    <div class="card" role="region" aria-label="Lead">
+      <div class="topbar">
+        <div class="top-left">
+          <div class="badge"><span class="dot" aria-hidden="true"></span>Gratis</div>
+          <div class="brand">
+            <strong>Rebell mit Herz</strong>
+            <span>Checkliste anfordern – dann nächster Schritt.</span>
+          </div>
+        </div>
+        <div class="top-cta">
+          <button class="tiny" id="shopBtn" type="button">Shop</button>
+          <button class="tiny" id="imprintBtn" type="button">Hinweis</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>Checkliste „In 10 Minuten aktenfest“</h1>
+        <p class="lead">Trage dich ein, wenn du die Checkliste per E-Mail erhalten möchtest.</p>
+
+        <div class="frame">
+          <div class="frame-title"><strong>Deine Angaben</strong></div>
+
+          <form id="leadForm" action="#" method="post" novalidate>
+            <div class="field">
+              <label for="leadEmail">E-Mail-Adresse</label>
+              <input id="leadEmail" name="email" type="email" autocomplete="email" required />
+            </div>
+
+            <div class="consent">
+              <input id="leadConsent" name="consent" type="checkbox" required />
+              <label for="leadConsent">Ich bin einverstanden, per E-Mail die Checkliste zu erhalten. Abmeldung jederzeit.</label>
+            </div>
+
+            <p class="hint">Datenschutz: Daten nur für Versand.</p>
+
+            <div class="actions">
+              <button class="primary" type="submit">Checkliste anfordern</button>
+              <button class="ghost" type="button" onclick="history.back()">Zurück</button>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="actions">
+              <button class="ghost" id="leadSkipShopBtn" type="button">Ich will sofort lösen</button>
+            </div>
+          </form>
+        </div>
+
+        <p class="fineprint">Hinweis: Allgemeine Orientierung. Keine Einzelfall-Rechtsberatung.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

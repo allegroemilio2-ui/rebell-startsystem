@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rebell mit Herz – Modul</title>
+  <meta name="color-scheme" content="dark" />
+  <link rel="stylesheet" href="assets/app.css" />
+</head>
+<body data-page="modul">
+  <div class="wrap">
+    <div class="card" role="region" aria-label="Modul">
+      <div class="topbar">
+        <div class="top-left">
+          <div class="badge"><span class="dot" aria-hidden="true"></span>Modul</div>
+          <div class="brand">
+            <strong>Rebell mit Herz</strong>
+            <span>Aktenfest in 60 Sekunden.</span>
+          </div>
+        </div>
+        <div class="top-cta">
+          <button class="tiny" id="shopBtn" type="button">Shop</button>
+          <button class="tiny" id="imprintBtn" type="button">Hinweis</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>Aktenfest in 60 Sekunden</h1>
+        <p class="lead">Ein kurzer nächster Schritt, der dir sofort Kontrolle zurückgibt.</p>
+
+        <div class="frame">
+          <div class="frame-title"><strong>Copy-Text A (neutral)</strong></div>
+          <div class="options">
+            <div class="opt" style="display:block;">
+              <div id="copyTextA" style="white-space:pre-wrap; line-height:1.45;">
+Hallo, ich möchte den Kontakt ruhig und verlässlich gestalten.
+Ich schlage vor: 🔲Tag, 🔲Uhrzeit, 🔲Ort/Übergabe.
+Bitte gib mir bis 🔲Datum kurz Rückmeldung, ob das passt.
+              </div>
+            </div>
+            <button class="ghost" id="copyABtn" type="button">Text kopieren</button>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="frame-title"><strong>Copy-Text B (Jugendamt neutral)</strong></div>
+          <div class="options">
+            <div class="opt" style="display:block;">
+              <div id="copyTextB" style="white-space:pre-wrap; line-height:1.45;">
+Guten Tag, ich bitte um einen zeitnahen Termin zur Klärung des weiteren Vorgehens.
+Bitte teilen Sie mir zwei Terminvorschläge mit und bestätigen Sie kurz den Eingang dieser Nachricht.
+Mit freundlichen Grüßen
+🔲Name
+              </div>
+            </div>
+            <button class="ghost" id="copyBBtn" type="button">Text kopieren</button>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="frame-title"><strong>Wenn du mehr brauchst …</strong></div>
+          <p class="micro">Dann ist ein PRO-Modul oder das Elternschutzpaket der schnellste Weg, weil du nicht jedes Mal neu anfangen musst.</p>
+          <div class="actions">
+            <button class="primary" id="moduleShopBtn" type="button">Sofort lösen</button>
+            <button class="ghost" type="button" onclick="location.href='index.html'">Start</button>
+          </div>
+        </div>
+
+        <p class="fineprint">Hinweis: Allgemeine Orientierung. Keine Einzelfall-Rechtsberatung.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

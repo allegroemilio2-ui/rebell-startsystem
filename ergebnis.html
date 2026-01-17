@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rebell mit Herz – Ergebnis</title>
+  <meta name="color-scheme" content="dark" />
+  <link rel="stylesheet" href="assets/app.css" />
+</head>
+<body data-page="ergebnis">
+  <div class="wrap">
+    <div class="card" role="region" aria-label="Ergebnis">
+      <div class="topbar">
+        <div class="top-left">
+          <div class="badge"><span class="dot" aria-hidden="true"></span>Ergebnis</div>
+          <div class="brand">
+            <strong>Rebell mit Herz</strong>
+            <span>3 Optionen. Priorisiert. Aktenfest.</span>
+          </div>
+        </div>
+        <div class="top-cta">
+          <button class="tiny" id="shopBtn" type="button">Shop</button>
+          <button class="tiny" id="imprintBtn" type="button">Hinweis</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>Deine aktuelle Einordnung</h1>
+        <p class="lead">Basierend auf deinen Angaben. Sachlich, ruhig, aktenfest.</p>
+
+        <div class="frame">
+          <div class="frame-title"><strong>Zusammenfassung</strong></div>
+          <div class="options" id="summaryText"></div>
+        </div>
+
+        <div class="frame" id="frameNeed" style="display:none;">
+          <div class="frame-title"><strong>Empfehlungen (Priorität)</strong></div>
+          <ul class="steps" id="needText"></ul>
+        </div>
+
+        <div class="frame">
+          <div class="frame-title"><strong>Dein nächster Schritt</strong></div>
+          <p class="micro">Du entscheidest Tempo: direkt lösen oder erst gratis starten.</p>
+          <div class="actions">
+            <button class="primary" id="ctaSolve" type="button">Sofort lösen</button>
+            <button class="ghost" id="ctaFree" type="button">Ich will erstmal gratis</button>
+            <button class="ghost" id="ctaBundle" type="button">Elternschutzpaket holen</button>
+          </div>
+
+          <!-- HIER Punkt 3: Gratis-Teaser -->
+          <p class="micro muted" style="margin-top:12px">
+            <strong>Gratis</strong> = erster sauberer Schritt (Vorlage & Orientierung).<br>
+            <strong>Elternschutzpaket</strong> = das komplette System: Verhalten, Taktik,
+            Eskalationslogik – alles aufeinander abgestimmt.
+          </p>
+        </div>
+
+        <div class="actions">
+          <button class="ghost" type="button" onclick="location.href='orientierung.html'">Zurück</button>
+        </div>
+
+        <p class="fineprint">Hinweis: Allgemeine Orientierung. Keine Einzelfall-Rechtsberatung.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
