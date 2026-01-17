@@ -99,7 +99,6 @@ const FREE_LINKS = {
     const infoBtn = $("infoBtn");
     if (gateBtn) gateBtn.addEventListener("click", () => location.href = "orientierung.html");
     if (infoBtn) infoBtn.addEventListener("click", () => {
-      alert("Kurz erklärt:\n\nDu klickst dich durch 3–4 kurze Fragen.\nDann bekommst du 3 passende Optionen (🔴🟡🟢) und einen klaren nächsten Schritt.");
     });
   }
 
@@ -390,3 +389,4 @@ const FREE_LINKS = {
   });
 
 })();
+
